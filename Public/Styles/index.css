@@ -1,0 +1,76 @@
+:root {
+  --mainHeaderColor: #e41f1f;
+  --navBackgroundColor: #808080;
+  --navBackgroundHoverColor: #000000;
+}
+
+.center {
+  display: grid;
+  justify-content: center;
+}
+
+header {
+  background-color: var(--mainHeaderColor);
+  height: 25px;
+  width: 760px;
+  color: white;
+  align-items: center;
+  margin-bottom: 1px;
+}
+header a {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 9px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.hero {
+  height: 100;
+  width: 760px;
+  margin-bottom: 1px;
+}
+nav {
+  display: flex;
+  height: 20px;
+  width: 760.03px;
+  margin-bottom: 1px;
+}
+.grupper,
+.verksamhet,
+.kompetens,
+.rodakorset,
+.lankar,
+.kontakt,
+.om_fhg {
+  background-color: var(--navBackgroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 19px;
+  width: 108px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 8pt;
+  margin-right: 1px;
+  margin-left: 0;
+}
+.grupper a,
+.verksamhet a,
+.kompetens a,
+.rodakorset a,
+.lankar a,
+.kontakt a,
+.om_fhg a {
+  color: white;
+  text-decoration: none;
+}
+.om_fhg {
+  margin: 0px;
+}
+
+.black {
+  height: 8px;
+  width: 760px;
+  background-color: var(--navBackgroundHoverColor);
+}
