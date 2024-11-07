@@ -1,29 +1,74 @@
 :root {
-  --mainHeaderColor: #e41f1f;
+  --headerBackgroundColor: #e41f1f;
   --navBackgroundColor: #808080;
   --navBackgroundHoverColor: #000000;
+  --mainBackgroundColor: #f6f6f6;
+  --linksContainerBackgroudColor: #dddddd;
+  --mainLinksTextColor: #e41f1f;
 }
 
 .center {
   display: grid;
   justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-  background-color: var(--mainHeaderColor);
+  background-color: var(--headerBackgroundColor);
   height: 25px;
   width: 760px;
   color: white;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   margin-bottom: 1px;
 }
 header a {
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
-  font-size: 9px;
+  font-size: 7pt;
   text-decoration: none;
   margin-left: 10px;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header .right {
+  display: grid;
+  vertical-align: center;
+  justify-content: end;
+  height: 20px;
+  width: 545px;
+  margin-bottom: 9px;
+}
+header .right input {
+  height: 15px;
+  width: 90px;
+  font-size: 7pt;
+  font-weight: normal;
+  border: solid 1px black;
+}
+header .grupp {
+  height: 20px;
+  width: 170px;
+  margin-bottom: 9px;
+}
+header .grupp select {
+  width: 130px;
+  height: 15px;
+  font-size: 7pt;
+  font-weight: normal;
+  border: solid 1px black;
+  margin-left: 30px;
+}
+header .right button {
+  background-color: transparent;
+  height: 0px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 7pt;
+  font-weight: bold;
 }
 .hero {
   height: 100;
@@ -49,7 +94,6 @@ nav {
   align-items: center;
   height: 19px;
   width: 108px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   font-size: 8pt;
   margin-right: 1px;
@@ -70,7 +114,87 @@ nav {
 }
 
 .black {
+  background-color: black;
   height: 8px;
   width: 760px;
-  background-color: var(--navBackgroundHoverColor);
+  margin-bottom: 1px;
+}
+
+main {
+  display: flex;
+  background-color: var(--mainBackgroundColor);
+  height: 346px;
+  width: 760px;
+  border-bottom: 1px solid black;
+  margin-bottom: 2px;
+}
+.linksContainer {
+  background-color: var(--linksContainerBackgroudColor);
+  height: 344px;
+  width: 152px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.imgContainer {
+  background-color: var(--mainBackgroundColor);
+  height: 65px;
+  width: 151px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 16px;
+}
+.textContainer {
+  height: 100%;
+  width: -webkit-fill-available;
+  background-color: transparent;
+}
+hr {
+  margin-top: 14px;
+  width: 570px;
+}
+
+.textmassa {
+  margin-top: 37px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 8pt;
+  line-height: 13px;
+}
+.textmassa a {
+  color: var(--mainLinksTextColor);
+  text-decoration: none;
+}
+.textmassa a:hover {
+  text-decoration: underline;
+}
+
+footer,
+footer a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 7pt;
+  color: #777777;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+/* TEXT STYLING */
+
+.rubrik1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #666666;
+}
+.rubrik2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #000000;
 }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../IMG/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../Styles/index.css" />
+    <link rel="stylesheet" href="../Styles/reset.css" />
+    <link rel="stylesheet" href="../Styles/preset.css" />
+    <title>fhg.se - Första Hjälpen Grupperna</title>
+  </head>
+  <body>
+    <!-- LÅT KODEN VARA -->
+    <div class="center">
+      <header>
+        <a href="../../index.html" style="width: 120px">Hem | Röda Korset</a>
+        <div class="right" style="width: 450px">
+          <form action="#">
+            <input
+              type="text"
+              value="Användarnamn"
+              onfocus="javascript:this.value='';"
+            />
+            <input
+              type="password"
+              value="Lösenord"
+              onfocus="javascript:this.value='';"
+            />
+            <button>»</button>
+          </form>
+          <!-- TÄNK INTE ENS TANKEN -->
+        </div>
+        <div class="grupp">
+          <form action="#" method="post" name="gruppval">
+            <select
+              name="grupper"
+              size="1"
+              class="lista"
+              onchange="NavLista(document.gruppval.grupper[document.gruppval.grupper.selectedIndex].value)"
+            >
+              <option value="1">Välj grupp</option>
+
+              <option value="2">Halmstad</option>
+
+              <option value="4">Malmö</option>
+
+              <option value="15">Stockholm</option>
+
+              <option value="19">Trelleborg</option>
+            </select>
+          </form>
+        </div>
+      </header>
+      <!-- RÖR INTE KODEN FÖR SJKUTON -->
+      <div class="hero">
+        <img
+          src="../IMG/p_hero.jpg"
+          alt="Tre Röda korset personer sitter och undersöker en patient. På sidan av bilden står det fhg.se"
+        />
+      </div>
+      <nav>
+        <div class="grupper">
+          <a href="../grupper/presentationer.php">Grupper</a>
+        </div>
+        <div class="verksamhet">
+          <a href="../verksamhet/verksamhet.html">Verksamhet</a>
+        </div>
+        <div class="kompetens">
+          <a href="../kompetens/kompetens.html">Kompetens</a>
+        </div>
+        <div class="rodakorset" style="background-color: black; height: 23px">
+          <a href="../rodakorset/rodakorset.html">Röda Korset</a>
+        </div>
+        <div class="lankar"><a href="../lankar/lankar.html">Länkar</a></div>
+        <div class="kontakt">
+          <a href="../konntakt/kontakt.html">Kontakt</a>
+        </div>
+        <div class="om_fhg"><a href="../om/om_fhg.html">Om fhg.se</a></div>
+      </nav>
+      <div class="black"></div>
+      <main class="mainContent" style="height: 365px">
+        <div class="linksContainer" style="height: 363px">
+          <div class="imgContainer">
+            <img src="../IMG/p_redcross_logo.png" alt="Röda korsets logo" />
+          </div>
+        </div>
+        <div class="textContainer">
+          <!-- OKEJ, JAG GER UPP. HÄR KAN DU FÅ KODA -->
+          <h1 class="rubrik1 mgl20 mgt20 mgb5">Röda Korset</h1>
+          <span class="rubrik2 mgl20"
+            >Vi är en del av en stor internationell organisation</span
+          >
+          <hr class="mgl20 mgt4" />
+          <div class="textmassa mgl20">
+            <b>Grundide</b><br />
+            <p>
+              Röda Korsets grundtanke och mål är att lindra och förhindra
+              mänskligt lidande. Första hjälpen grupperna utgör en del i Röda
+              Korsets arbete med att eftersträva sin målsättning.
+            </p>
+            <br />
+            <p>
+              Alla inom Röda Korset arbetar efter sju gemensamma grundprinciper:
+            </p>
+            <br />
+            <ul>
+              <li>Humanitet</li>
+              <li>Opartiskhet</li>
+              <li>Neutralitet</li>
+              <li>Självständighet</li>
+              <li>Frivillighet</li>
+              <li>Enhet</li>
+              <li>Universalitet</li>
+            </ul>
+            <br />
+            <p>
+              Om du vill veta mer om Svenska Röda Korset och dess verksamhet i
+              allmänhet kan du läsa vidare på
+              <a href="https://www.rodakorset.se" target="_blank"
+                >www.rodakorset.se</a
+              >. Där hittar du även kontaktinformation till personer och
+              verksamhet både lokalt och nationellt.
+            </p>
+          </div>
+        </div>
+      </main>
+      <!-- MEN RÖR INGET NEDANFÖR, snälla :) -->
+      <footer>
+        © copyright Exortus AB |
+        <a href="/om/anvandarvillkor">Användarvillkor</a>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript" src="../_inc/p_funktioner.js"></script>
+</html>

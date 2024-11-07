@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Public/Styles/index.css" />
+    <link rel="stylesheet" href="Public/Styles/reset.css" />
+    <link rel="stylesheet" href="Public/Styles/preset.css" />
+    <title>fhg.se - Första Hjälpen Grupperna</title>
+  </head>
+  <body>
+    <!-- LÅT KODEN VARA -->
+    <div class="center">
+      <header>
+        <a href="index.html">Hem</a>
+        <div class="right">
+          <form action="#">
+            <input
+              type="text"
+              value="Användarnamn"
+              onfocus="javascript:this.value='';"
+            />
+            <input
+              type="password"
+              value="Lösenord"
+              onfocus="javascript:this.value='';"
+            />
+            <button>»</button>
+          </form>
+          <!-- TÄNK INTE ENS TANKEN -->
+        </div>
+        <div class="grupp">
+          <form action="#" method="post" name="gruppval">
+            <select
+              name="grupper"
+              size="1"
+              class="lista"
+              onchange="NavLista(document.gruppval.grupper[document.gruppval.grupper.selectedIndex].value)"
+            >
+              <option value="1">Välj grupp</option>
+
+              <option value="2">Halmstad</option>
+
+              <option value="4">Malmö</option>
+
+              <option value="15">Stockholm</option>
+
+              <option value="19">Trelleborg</option>
+            </select>
+          </form>
+        </div>
+      </header>
+      <!-- RÖR INTE KODEN FÖR SJKUTON -->
+      <div class="hero">
+        <img
+          src="Public/IMG/p_hero.jpg"
+          alt="Tre Röda korset personer sitter och undersöker en patient. På sidan av bilden står det fhg.se"
+        />
+      </div>
+      <nav>
+        <div class="grupper">
+          <a href="Public/grupper/presentationer.php">Grupper</a>
+        </div>
+        <div class="verksamhet">
+          <a href="Public/verksamhet/verksamhet.html">Verksamhet</a>
+        </div>
+        <div class="kompetens">
+          <a href="Public/kompetens/kompetens.html">Kompetens</a>
+        </div>
+        <div class="rodakorset">
+          <a href="Public/rodakorset/rodakorset.html">Röda korset</a>
+        </div>
+        <div class="lankar"><a href="Public/lankar/lankar.html">Länkar</a></div>
+        <div class="kontakt">
+          <a href="Public/konntakt/kontakt.html">Kontakt</a>
+        </div>
+        <div class="om_fhg"><a href="Public/om/om_fhg.html">Om fhg.se</a></div>
+      </nav>
+      <div class="black"></div>
+      <main class="mainContent">
+        <div class="linksContainer">
+          <div class="imgContainer">
+            <img src="Public/IMG/p_redcross_logo.png" alt="Röda korsets logo" />
+          </div>
+        </div>
+        <div class="textContainer">
+          <!-- OKEJ, JAG GER UPP. HÄR KAN DU FÅ KODA -->
+          <h1 class="rubrik1 mgl20 mgt20 mgb5">Välkommen till fhg.se!</h1>
+          <span class="rubrik2 mgl20"
+            >Portalen för Första hjälpen-grupper inom Röda Korset</span
+          >
+          <hr class="mgl20" />
+          <div class="textmassa mgl20">
+            <p>
+              Inom
+              <a href="https://www.rodakorset.se" target="_blank"
+                >Svenska Röda Korset</a
+              >
+              finns ett stort antal lokala Första hjälpen-grupper, som anlitas
+              vid idrottstävlingar, rockkonserter och andra evenemang där det
+              behövs olycksfallsberedskap. Grundtanken <br />
+              med Första hjälpen-gruppernas medverkan är att snabbt kunna göra
+              ett första omhändertagande vid <br />
+              eventuella skador och sjukdomar. Det kan handla om allt från
+              enklare omplåstring till livsuppehållande
+              <br />
+              åtgärder i väntan på ambulans. <br /><br />
+            </p>
+            <p>
+              Allt arbete inom grupperna är ideellt och utförs av medlemmar som
+              får specialanpassad
+              <a href="/kompetens/">utbildning</a> för att klara av sitt uppdrag
+              på bästa sätt. Alla Första hjälpen-grupper inom Röda Korset har
+              gemensamma <br />
+              riktlinjer för sin verksamhet, men jobbar i övrigt relativt
+              självständigt inom ett visst geografiskt område. <br /><br />
+            </p>
+            <p>
+              På fhg.se finns i första hand information och kontaktuppgifter om
+              de <a href="/grupper/">grupper</a> som själva har valt att
+              presentera sin verksamhet här. Innehållet vänder sig såväl till
+              dig som vill <a href="/kontakt/anlita_oss.asp">anlita oss</a> som
+              till
+              <a href="/kontakt/bli_medlem.asp"
+                >nya <br />
+                medlemmar</a
+              >
+              och allmänhet. För dig som redan är medlem finns dessutom mycket
+              intern information när <br />
+              du loggar in.
+            </p>
+          </div>
+        </div>
+      </main>
+      <!-- MEN RÖR INGET NEDANFÖR, snälla :) -->
+      <footer>
+        © copyright Exortus AB |
+        <a href="/om/anvandarvillkor">Användarvillkor</a>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript" src="Public/_inc/p_funktioner.js"></script>
+</html>
